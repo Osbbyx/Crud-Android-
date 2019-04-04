@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/f7f68f4ef9e52fea71f91547c99e2431"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txt_codigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/txt_codigo"
+            android:inputType="number"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="35dp" />
+
+        <EditText
+            android:id="@+id/txt_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/txt_descripcion"
+            android:inputType="textPersonName"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="95dp" />
+
+        <EditText
+            android:id="@+id/txt_precio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/txt_precio"
+            android:inputType="numberDecimal"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="154dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton_redondo"
+            android:onClick="Registrar"
+            android:text="@string/BotonRegistrar"
+            tools:layout_editor_absoluteX="44dp"
+            tools:layout_editor_absoluteY="219dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton_redondo"
+            android:onClick="Buscar"
+            android:text="@string/BotonBuscar"
+            tools:layout_editor_absoluteX="83dp"
+            tools:layout_editor_absoluteY="277dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton_redondo"
+            android:onClick="Modificar"
+            android:text="@string/BotonModificar"
+            tools:layout_editor_absoluteX="120dp"
+            tools:layout_editor_absoluteY="347dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton_redondo"
+            android:onClick="Eliminar"
+            android:text="@string/BotonEliminar"
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="405dp" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
